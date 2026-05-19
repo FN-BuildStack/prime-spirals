@@ -32,3 +32,33 @@ Deploy the suite within an isolated virtual environment to ensure dependency int
    ```bash
    git clone [https://github.com/FN-BuildStack/prime-spirals.git](https://github.com/FN-BuildStack/prime-spirals.git)
    cd prime-spirals
+
+2. **Initialize the virtual environment:**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+
+## Execution & Controls
+
+Launch the interactive engine directly from the terminal:
+
+```bash
+python spirals.py
+```
+
+### Hotkeys & Interactivity
+
+* **[UP / DOWN]:** Accelerate or decelerate the animation frame rate dynamically.
+* **[B]:** Toggle between Dark Mode and Light Theme.
+* **[G]:** Toggle analytical grid bounds.
+* **[L]:** Toggle continuous spiral path rendering (optimized for zero-lag visibility switching).
+* **[C]:** Toggle prime coordinate scatter dots.
+* **Search Box:** Input any integer up to the defined boundary (default: `20000`) to highlight its exact vector position across both geometries. If the integer is beyond the current rendering index, the engine will automatically fast-forward the timeline to the target.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
